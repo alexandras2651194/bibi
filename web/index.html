@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globin Evolution — Phylogenetic Tree</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Evolutia proteinelor transportatoare de O2 din familia globinelor</h1>
+      
+    </div>
+    <div class="status" id="status">Loading tree…</div>
+  </header>
+
+  <main>
+    <section class="card tree-card">
+      <div class="card-head">
+        <div>
+          <h2>Arborele filogenetic</h2>
+        </div>
+        <button id="fitButton" type="button">Fit tree</button>
+      </div>
+      <div id="treeContainer" class="tree-container">
+        <div class="loading">Loading <code>tree.newick</code>…</div>
+      </div>
+    </section>
+
+    <section class="card info-card">
+      <div>
+        <span class="label">Interpretare</span>
+        <p> Mai multe informatii: </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="tree.js"></script>
+</body>
+</html>
